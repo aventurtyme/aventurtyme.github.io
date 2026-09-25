@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hannah's Website</title>
+<meta name="description" content="Hannah's personal portfolio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="#hero" class="nav-brand">~/hannah</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <pre class="ascii-cat" aria-hidden="true">
+                                               .--.
+                                               `.  \
+                                                 \  \
+                                                  .  \
+                                                  :   .
+                                                  |    .
+                                                  |    :
+                                                  |    |
+  ..._  ___                                       |    |
+ `."".`''''""--..___                              |    |
+ ,-\  \             ""-...__         _____________/    |
+ / ` " '                    `""""""""                  .
+ \                                                      L
+ (>                                                      \
+/                                                         \
+\_    ___..---.                                            L
+  `--'         '.                                           \
+                 .                                           \_
+                _/`.                                           `.._
+             .'     -.                                             `.
+            /     __.-Y     /''''''-...___,...--------.._            |
+           /   _."    |    /                ' .      \   '---..._    |
+          /   /      /    /                _,. '    ,/           |   |
+          \_,'     _.'   /              /''     _,-'            _|   |
+                  '     /               `-----''               /     |
+                  `...-'                                       `...-'
+    </pre>
+    <h1 class="hero-name">Hi, I'm Hannah</h1>
+    <p class="hero-role">DATA · AI · PRODUCT</p>
+    <p class="hero-subrole">Applied Computing in Finance @ NTU</p>
+    <p class="hero-intro">
+      Penultimate-year student building data-driven tools and exploring how applied AI
+      turns into real impact for users and businesses. Interested in product analytics,
+      applied AI, and technology-focused roles.
+    </p>
+  </section>
+
+  <!-- EXPERIENCE / EDUCATION -->
+  <section id="experience" class="section">
+    <p class="ascii-divider" aria-hidden="true">· · ·</p>
+    <h2 class="section-title">Experience &amp; Education</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">Jun 2026 – Jul 2026</div>
+        <div class="timeline-content">
+          <h3>Student Consultant — Singtel</h3>
+          <p class="timeline-sub">AI Personalisation · Contract · Singapore</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2024 – 2028</div>
+        <div class="timeline-content">
+          <h3>Nanyang Technological University</h3>
+          <p class="timeline-sub">Bachelor of Applied Computing in Finance</p>
+          <p class="timeline-sub">NTU Muslim Society — Finance Head of Department (Seekers Garden), Publicity Head of Department (Safwa)</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <h3>FinSight</h3>
+        <p class="project-tag">GenAI Financial Intelligence Platform</p>
+        <p>
+          An AI-powered financial intelligence platform with market sentiment analytics,
+          AI-generated stock research, and a historical replay framework that assessed
+          over 190 Gemini-based recommendations across 16 stocks and 6 sectors.
+        </p>
+        <p class="project-stack">React · FastAPI · PostgreSQL · Gemini · GitHub Actions</p>
+        <a href="https://github.com/aventurtyme/finsight-v2" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>F1 Pit Stop Analyser</h3>
+        <p class="project-tag">Formula 1 Pit Strategy Analytics</p>
+        <p>
+          A full-stack strategy analytics platform centred on a proprietary Undercut
+          Threat Score (UTS) metric, evaluating pit stop timing using tyre degradation,
+          race gaps, and circuit-specific pit loss estimates across multiple seasons.
+        </p>
+        <p class="project-stack">Python · FastF1 · pandas · PostgreSQL · FastAPI · React</p>
+        <a href="https://github.com/aventurtyme/f1-pit-strategy" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>SME Insurance Analytics</h3>
+        <p class="project-tag">Risk &amp; Segmentation Analysis for QBE Asia</p>
+        <p>
+          Analysed 10 years of SME survey data to investigate factors influencing
+          insurance purchase behaviour, using logistic regression with LASSO variable
+          selection to identify key risk drivers, presented to QBE stakeholders and faculty.
+        </p>
+        <p class="project-stack">R · Excel · Python</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="ascii-divider" aria-hidden="true">· · ·</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>Python · SQL · R · Java · JavaScript / TypeScript</p>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks</h3>
+        <p>React · FastAPI</p>
+      </div>
+      <div class="skill-group">
+        <h3>Data</h3>
+        <p>pandas · NumPy · scikit-learn · PostgreSQL</p>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <p>Docker · Git · GitHub Actions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-links">
+      <a href="https://github.com/aventurtyme" target="_blank" rel="noopener">GitHub</a>
+      <a href="http://www.linkedin.com/in/hannah-hirwan" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hannah012@e.ntu.edu.sg">Email</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Hannah · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
